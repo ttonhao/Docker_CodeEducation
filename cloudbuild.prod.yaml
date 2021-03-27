@@ -14,7 +14,7 @@ steps:
 
   - id: "Pushing image"
     name: "docker"
-    args: ["push", "gcr.io/$PROJECT_ID/app-laravel:$SHORT_SHA"]
+    args: ["push", "gcr.io/$PROJECT_ID/app-lavarel:$SHORT_SHA"]
 
   - id: 'Ajusting deployment file - k8s'
     name: "gcloud"
