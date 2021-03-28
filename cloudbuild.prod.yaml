@@ -30,8 +30,9 @@ steps:
     entrypoint: "/bin/sh"
     args:
       - "-c"
-      - php artisan config:cache
-      - php artisan migrate
+      - |
+        php artisan config:cache
+        php artisan migrate
 
   - id: "Deploying k8s"
     name: "gcr.io/cloud-builders/kubectl"
