@@ -17,7 +17,7 @@ spec:
           command:
             - "bin/sh"
             - "-c"
-            - "touch /usr/share/nginx/index.php; nginx -g 'daemon off;'"
+            - "touch usr/share/nginx/html/index.php; nginx -g 'daemon off;'"
           ports:
             - containerPort: 80
 
