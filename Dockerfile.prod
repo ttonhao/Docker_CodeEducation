@@ -17,5 +17,8 @@ RUN composer install \
 
 RUN npm install
 
+RUN php artisan config:cache \
+    && php artisan migrate
+
 EXPOSE 9000
 ENTRYPOINT ["php-fpm"]
