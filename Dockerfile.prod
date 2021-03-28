@@ -15,7 +15,7 @@ RUN composer install \
     && php artisan cache:clear \
     && chmod -R 755 storage
 
-RUN chmod +x entrypoint.sh
+RUN chmod +x /var/www/k8s/entrypoint.sh
 
 RUN npm install
 
