@@ -17,8 +17,7 @@ spec:
           command:
             - "/bin/sh"
             - "-c"
-            - "ln -s /var/www /usr/share/nginx;"
-            - "php-fpm;"
+            - "ln -s /var/www /usr/share/nginx;php-fpm"
           ports:
             - containerPort: 80
           env:
